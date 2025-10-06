@@ -200,9 +200,7 @@ class SmartHome:
         if self.gui_alert_func:
             self.gui_alert_func("Routine Status", "Morning routine complete.")
 
-# --------------------------
-# --- The Tkinter GUI Code (System Log Removed) ---
-# --------------------------
+
 
 class SmartHomeGUI(tk.Tk):
     def __init__(self, smart_home_system):
