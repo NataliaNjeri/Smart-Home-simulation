@@ -47,6 +47,7 @@ class SmartThermostat(SmartActuator):
     def __init__(self, location):
         super().__init__(f"Thermostat in the {location}")
         self.target_temp = 24
+    
 
     def set_temperature(self, temp):
         self.target_temp = temp
@@ -67,9 +68,7 @@ class SmartCoffeeMaker(SmartActuator):
 class DoorSensor(SmartSensor):
     def __init__(self, location):
         super().__init__(f"Door Sensor ({location})", 0, 1, "")
-        self._is_open = False
-
-    def is_open(self):
+        self._is_open = Fals  def is_open(self):
         # Significantly reduced chance of random security trigger (0.5% chance)
         if random.random() > 0.995:
             self._is_open = True
@@ -92,7 +91,6 @@ class SmartCamera(SmartActuator):
 
     def start_recording(self):
         self.is_recording = True
-
 
 # --- The Smart Home Hub Backend Logic (Security Fix Applied) ---
 
