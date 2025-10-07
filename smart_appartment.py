@@ -268,7 +268,7 @@ class SmartHomeGUI(tk.Tk):
                 btn.config(**button_style)
         
         if self.panic_btn.winfo_exists():
-            self.panic_btn.config(bg="#ff4d4d", fg="white", activebackground="#cc0000")
+            self.panic_btn.config(bg="#3f1515", fg="white", activebackground="#cc0000")
             
         # Apply panel background to all frames
         for widget in self.winfo_children():
