@@ -239,14 +239,14 @@ class SmartHomeGUI(tk.Tk):
         if self.current_theme == "dark":
             main_bg = "#1a1a2e"
             panel_bg = "#2c2b3f"
-            text_color = "#e0e0e0"
-            button_bg = "#0f3460"
+            text_color = "#E7E6E6"
+            button_bg = "#11234A"
             
         else: 
             main_bg = "#f0f0f0"
             panel_bg = "#ffffff"
-            text_color = "#333333"
-            button_bg = "#e0e0e0"
+            text_color = "#2C2929"
+            button_bg = "#f9f1f0"
         
         self.config(bg=main_bg)
 
